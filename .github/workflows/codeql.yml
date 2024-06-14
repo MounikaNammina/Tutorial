@@ -1,5 +1,6 @@
 name: SAST Scan
 on:
+workflow:
   push:
     branches: [main]
   pull_request:
@@ -7,6 +8,6 @@ on:
 jobs:
   run_scan:
     name: 'SAST Scan'
-    uses: MounikaNammina/Tutorial/.github/workflows/codeql.yml@v3
+    uses: .github/workflows/codeql.yml@v3
     with:
       languages: "['java']"
