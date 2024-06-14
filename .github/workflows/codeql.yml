@@ -1,6 +1,4 @@
 name: SAST Scan
-on:
-workflow:
   push:
     branches: [main]
   pull_request:
