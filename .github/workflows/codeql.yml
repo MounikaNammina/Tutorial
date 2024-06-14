@@ -8,6 +8,6 @@ workflow_call:
 jobs:
   run_scan:
     name: 'SAST Scan'
-    uses: MounikaNammina/Tutorial/.github/workflows/codeql.yml@main
+    uses: MounikaNammina/Tutorial/.github/workflows/codeql.yml@init@v3
     with:
       languages: "['java']"
