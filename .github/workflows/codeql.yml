@@ -8,6 +8,6 @@ workflow:
 jobs:
   run_scan:
     name: 'SAST Scan'
-    uses: .github/workflows/codeql.yml@v3
+    uses: ./.github/workflows/codeql.yml
     with:
       languages: "['java']"
