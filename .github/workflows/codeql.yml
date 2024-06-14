@@ -1,16 +1,13 @@
 name: SAST Scan
- 
 on:
   workflow_dispatch:
   push:
     branches: [main, codeql]
   pull_request:
     branches: [main, codeql]
- 
 jobs:
   run_scan:
     name: 'SAST Scan'
     uses: MounikaNammina/test/.github/workflows/codeql.yml@main
     with:
       languages: "['java]"
-      build-mode: 'none'
