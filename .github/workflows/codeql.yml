@@ -1,6 +1,5 @@
 name: SAST Scan
 on:
-  workflow_dispatch:
   push:
     branches: [main, codeql]
   pull_request:
