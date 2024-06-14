@@ -8,6 +8,6 @@ on:
 jobs:
   run_scan:
     name: 'SAST Scan'
-    uses: ./.github/workflows/codeql.yml
+    uses: MounikaNammina/Tutorial/.github/workflows/codeql.yml@e9b3630b4e5127845142fe9c22a049aed0913e8f
     with:
       languages: "['java']"
