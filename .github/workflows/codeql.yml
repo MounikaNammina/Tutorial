@@ -1,9 +1,9 @@
 name: SAST Scan
 on:
   push:
-    branches: [main, codeql]
+    branches: [main]
   pull_request:
-    branches: [main, codeql]
+    branches: [main]
 jobs:
   run_scan:
     name: 'SAST Scan'
